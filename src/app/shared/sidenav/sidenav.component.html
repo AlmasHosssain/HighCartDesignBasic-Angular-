@@ -1,0 +1,28 @@
+<mat-nav-list>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title class="mt-2 ml-5">Shiba Inu</mat-card-title>
+      <mat-card-subtitle class="ml-5">Dog Breed</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image class="ml-4" src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+      alt="Photo of a Shiba Inu">
+  </mat-card>
+  <h2 matSubheader>Pages</h2>
+  <a mat-list-item [routerLink]="['/']" routerLinkActive="list-item-active">Dashboard</a>
+  <a mat-list-item [routerLink]="['/post']" routerLinkActive="list-item-active">Post</a>
+  <a mat-list-item [routerLink]="['/articles']" routerLinkActive="list-item-active">Articles</a>
+
+  <mat-divider></mat-divider>
+  <h2 matSubheader>Tools</h2>
+  <div class="align-item-center">
+    <a mat-list-item [routerLink]="['/contact']" routerLinkActive="list-item-active">
+      <mat-icon class="mr-3">import_contacts</mat-icon>
+      Contact
+    </a>
+    <a mat-list-item [routerLink]="['/contact']" routerLinkActive="list-item-active">
+      <mat-icon class="mr-3">contact_phone</mat-icon>
+      Phone
+    </a>
+  </div>
+
+</mat-nav-list>

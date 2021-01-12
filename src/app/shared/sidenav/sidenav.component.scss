@@ -1,0 +1,13 @@
+:host{
+   .example-card {
+      max-width: 400px;
+      max-height: 250px;
+      padding: 0px 10px 10px 10px;
+    }
+    .mat-card-image{
+       height: 150px;
+       width: 150px;
+       object-fit: cover;
+       border-radius: 50%;
+    }
+}

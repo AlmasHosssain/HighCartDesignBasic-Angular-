@@ -1,0 +1,27 @@
+<div>
+   <app-width-area [data]="cartData"></app-width-area>
+</div>
+<br>
+<mat-divider></mat-divider>
+<br>
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
+   <mat-card fxFlex="25">
+      <app-width-card [data]="cardData" label= "User Attention" total="20" percentage="2"></app-width-card>
+   </mat-card>
+   <mat-card fxFlex="25">
+      <app-width-card [data]="cardData" label= "Angular Verification" total="42" percentage="20"></app-width-card>
+   </mat-card>
+   <mat-card fxFlex="25">
+      <app-width-card [data]="cardData" label= "Admin attraction" total="80" percentage="32"></app-width-card>
+   </mat-card>
+   <mat-card fxFlex="25">
+      <app-width-card [data]="cardData" label= "My Career" total="20" percentage="2"></app-width-card>
+   </mat-card>
+</div>
+<br>
+<mat-divider></mat-divider>
+<br>
+<div fxLayout="row" fxLayoutGap="30px" fxLayoutAlign="space-between center">
+   <app-table [data]="tableData" fxFlex="60"></app-table>
+   <app-pie [data]="pieData" fxFlex="40"></app-pie>
+</div>
